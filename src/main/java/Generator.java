@@ -1,4 +1,4 @@
-public class Generate {
+public class Generator {
 
     public String generatePassword(int length){
 
@@ -15,6 +15,17 @@ public class Generate {
             password.append(charSet.charAt(index));
         }
 
+
         return password.toString();
+    }
+
+    public String createNewPassword(int length){
+        Checker checker = new Checker();
+        String password = "";
+        do {
+            password = generatePassword(length);
+        } while (!checker.isStrongPassword(password));
+
+        return password;
     }
 }

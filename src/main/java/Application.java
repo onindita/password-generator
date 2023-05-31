@@ -1,4 +1,3 @@
-import javax.xml.stream.events.Characters;
 import java.util.Scanner;
 
 public class Application {
@@ -17,7 +16,7 @@ public class Application {
         } while( length < 8 || length > 20);
 
         System.out.println("Generating new password of length " + length + "...");
-        System.out.println("Your new password is: " + new Generate().generatePassword(length));
+        System.out.println("Your new password is: " + new Generator().createNewPassword(length));
         scanner.close();
     }
 }
