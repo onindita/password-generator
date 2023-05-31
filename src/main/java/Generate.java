@@ -1,7 +1,7 @@
 public class Generate {
 
-    public String generatePassword(String passwordlength){
-        int length = Integer.valueOf(passwordlength);
+    public String generatePassword(int length){
+
         StringBuilder password = new StringBuilder();
 
         String charSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()-_=+\\/~?";
